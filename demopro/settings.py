@@ -18,6 +18,7 @@ class Userform(models.Model):
     order= models.CharField(max_length=200)
     type = models.CharField(max_length=200)
     discription = models.TextField(null=True, blank=True)
+    # for timestamp
 
     tile = models.DateTimeField(auto_now_add=True)
 
