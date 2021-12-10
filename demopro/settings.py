@@ -12,7 +12,7 @@ class Title(models.Model):
 # creating user model
 
 class Userform(models.Model):
-    host = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     topic = models.ForeignKey(Title, on_delete=models.SET_NULL, null=True)
     name = models.CharField(max_length=200)
     order= models.CharField(max_length=200)
